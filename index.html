@@ -69,14 +69,14 @@
     </div>
 </section>
 
-    <section id="contact" class="contact">
+   <section id="contact" class="contact">
     <h2>Contact & Réservation</h2>
 
     <!-- Coordonnées directes -->
     <div class="contact-info">
         <div class="info-item">
             <span>📞</span>
-            <p><strong>Téléphone :</strong> <a href="tel:+221770000000">+221 77 000 00 00</a></p>
+            <p><strong>Téléphone :</strong> <a href="tel:+221785819699">+221 77 581 96 99</a></p>
         </div>
         <div class="info-item">
             <span>💬</span>
@@ -101,6 +101,21 @@
             <option value="hebergement">Maison d'Hôtes (20 000 FCFA / nuit)</option>
         </select>
 
+        <!-- Nombre de personnes -->
+        <div style="text-align: left;">
+            <label for="personCount" style="font-weight: 600; font-size: 0.9rem;">Nombre de participants :</label>
+            <input type="number" id="personCount" min="1" max="20" value="1" required style="width: 100%; margin-top: 5px;">
+        </div>
+
+        <!-- Affichage du Prix Total -->
+        <div id="priceDisplay" style="background-color: #e8f5e9; color: #2e7d32; padding: 12px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; text-align: center; border: 1px solid #c8e6c9; margin-bottom: 1rem;">
+            Prix estimé : <span id="totalPrice">0 FCFA</span>
+        </div>
+
+        <textarea placeholder="Votre message ou vos dates de voyage..." rows="4" required></textarea>
+        <button type="submit" class="btn">Envoyer la demande</button>
+    </form>
+</section>
         <!-- Nombre de personnes -->
         <div style="text-align: left;">
             <label for="personCount" style="font-weight: 600; font-size: 0.9rem;">Nombre de participants :</label>
