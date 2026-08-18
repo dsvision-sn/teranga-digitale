@@ -70,48 +70,52 @@
 </section>
 
     <section id="contact" class="contact">
-        <h2>Réservez votre expérience</h2>
+    <h2>Contact & Réservation</h2>
+
+    <!-- Coordonnées directes -->
+    <div class="contact-info">
+        <div class="info-item">
+            <span>📞</span>
+            <p><strong>Téléphone :</strong> <a href="tel:+221770000000">+221 77 000 00 00</a></p>
+        </div>
+        <div class="info-item">
+            <span>💬</span>
+            <p><strong>WhatsApp :</strong> <a href="https://wa.me/221785819699" target="_blank">Discuter sur WhatsApp</a></p>
+        </div>
+        <div class="info-item">
+            <span>📍</span>
+            <p><strong>Adresse :</strong> Rufisque, Dakar, Sénégal</p>
+        </div>
+    </div>
+
+    <!-- Formulaire de réservation avec le calculateur -->
+    <form class="contact-form" id="bookingForm">
+        <input type="text" placeholder="Votre Nom complet" required>
+        <input type="email" placeholder="Votre Email" required>
         
-        <div class="location-info">
-            <h3>📍 Adresse de l'atelier</h3>
-            <p>Nous vous accueillons à <strong>Rufisque, Dakar, Sénégal</strong>.</p>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30865.2341235689!2d-17.2888!3d14.7167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1a39fbc7a9e63%3A0x6b6c1417088a2e1d!2sRufisque!5e0!3m2!1sfr!2ssn!4v1700000000000" 
-                width="100%" 
-                height="220" 
-                style="border:0; border-radius: 10px; margin-top: 15px; max-width: 600px;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
+        <!-- Choix de l'expérience -->
+        <select id="experienceSelect" required>
+            <option value="">Choisissez une expérience</option>
+            <option value="circuit">Circuit Sur Mesure (25 000 FCFA / pers)</option>
+            <option value="cuisine">Atelier Ceebu Jën (15 000 FCFA / pers)</option>
+            <option value="hebergement">Maison d'Hôtes (20 000 FCFA / nuit)</option>
+        </select>
+
+        <!-- Nombre de personnes -->
+        <div style="text-align: left;">
+            <label for="personCount" style="font-weight: 600; font-size: 0.9rem;">Nombre de participants :</label>
+            <input type="number" id="personCount" min="1" max="20" value="1" required style="width: 100%; margin-top: 5px;">
         </div>
 
-        <form class="contact-form" id="bookingForm">
-    <input type="text" placeholder="Votre Nom complet" required>
-    <input type="email" placeholder="Votre Email" required>
-    
-    <!-- Choix de l'expérience -->
-    <select id="experienceSelect" required>
-        <option value="">Choisissez une expérience</option>
-        <option value="circuit">Circuit Sur Mesure (25 000 FCFA / pers)</option>
-        <option value="cuisine">Atelier Ceebu Jën (15 000 FCFA / pers)</option>
-        <option value="hebergement">Maison d'Hôtes (20 000 FCFA / nuit)</option>
-    </select>
+        <!-- Affichage du Prix Total -->
+        <div id="priceDisplay" style="background-color: #e8f5e9; color: #2e7d32; padding: 12px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; text-align: center; border: 1px solid #c8e6c9; margin-bottom: 1rem;">
+            Prix estimé : <span id="totalPrice">0 FCFA</span>
+        </div>
 
-    <!-- Nombre de personnes -->
-    <div style="text-align: left;">
-        <label for="personCount" style="font-weight: 600; font-size: 0.9rem;">Nombre de participants :</label>
-        <input type="number" id="personCount" min="1" max="20" value="1" required style="width: 100%; margin-top: 5px;">
-    </div>
-
-    <!-- Affichage du Prix Total -->
-    <div id="priceDisplay" style="background-color: #e8f5e9; color: #2e7d32; padding: 12px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; text-align: center; border: 1px solid #c8e6c9;">
-        Prix estimé : <span id="totalPrice">0 FCFA</span>
-    </div>
-
-    <textarea placeholder="Votre message ou vos dates de voyage..." rows="4" required></textarea>
-    <button type="submit" class="btn">Envoyer la demande</button>
-</form>
-    </section>
+        <textarea placeholder="Votre message ou vos dates de voyage..." rows="4" required></textarea>
+        <button type="submit" class="btn">Envoyer la demande</button>
+    </form>
+</section>
 
     <!-- Pop-up Notification (Toast) -->
     <div id="toast" class="toast">Réservation envoyée avec succès ! 🌴</div>

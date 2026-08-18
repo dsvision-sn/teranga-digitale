@@ -241,3 +241,35 @@ footer {
 .card.hide {
     display: none;
 }
+/* Style du bloc d'informations de contact */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.info-item span {
+    font-size: 1.5rem;
+}
+
+.info-item a {
+    color: #00853f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
