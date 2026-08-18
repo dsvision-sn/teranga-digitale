@@ -27,14 +27,15 @@
         <button id="themeToggle" class="theme-btn" title="Changer de thème">🌙</button>
     </div>
 </header>
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>La Téranga Digitale</h1>
-            <p>Découvrez le Sénégal authentique</p>
-        </div>
-    </section>
 
-    <section id="services" class="services">
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <h1>La Téranga Digitale</h1>
+        <p>Découvrez le Sénégal authentique</p>
+    </div>
+</section>
+
+<section id="services" class="services">
     <h2>Nos Expériences</h2>
 
     <!-- Boutons de Filtre -->
@@ -73,7 +74,7 @@
     </div>
 </section>
 
-   <section id="contact" class="contact">
+<section id="contact" class="contact">
     <h2>Contact & Réservation</h2>
 
     <!-- Coordonnées directes -->
@@ -120,29 +121,14 @@
         <button type="submit" class="btn">Envoyer la demande</button>
     </form>
 </section>
-        <!-- Nombre de personnes -->
-        <div style="text-align: left;">
-            <label for="personCount" style="font-weight: 600; font-size: 0.9rem;">Nombre de participants :</label>
-            <input type="number" id="personCount" min="1" max="20" value="1" required style="width: 100%; margin-top: 5px;">
-        </div>
 
-        <!-- Affichage du Prix Total -->
-        <div id="priceDisplay" style="background-color: #e8f5e9; color: #2e7d32; padding: 12px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; text-align: center; border: 1px solid #c8e6c9; margin-bottom: 1rem;">
-            Prix estimé : <span id="totalPrice">0 FCFA</span>
-        </div>
+<!-- Pop-up Notification (Toast) -->
+<div id="toast" class="toast">Réservation envoyée avec succès ! 🌴</div>
 
-        <textarea placeholder="Votre message ou vos dates de voyage..." rows="4" required></textarea>
-        <button type="submit" class="btn">Envoyer la demande</button>
-    </form>
-</section>
+<footer>
+    <p>&copy; 2026 La Téranga Digitale - Tous droits réservés.</p>
+</footer>
 
-    <!-- Pop-up Notification (Toast) -->
-    <div id="toast" class="toast">Réservation envoyée avec succès ! 🌴</div>
-
-    <footer>
-        <p>&copy; 2026 La Téranga Digitale - Tous droits réservés.</p>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
