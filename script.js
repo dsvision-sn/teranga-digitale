@@ -46,3 +46,27 @@ bookingForm.addEventListener('submit', function(e) {
         toast.className = toast.className.replace("toast show", "toast");
     }, 3000);
 });
+// --- Gestion des Filtres par Catégorie ---
+const filterButtons = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.cards-container .card');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Retirer la classe 'active' de tous les boutons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Ajouter la classe 'active' sur le bouton cliqué
+        button.classList.add('active');
+
+        const filterValue = button.getAttribute('data-filter');
+
+        cards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+
+            if (filterValue === 'all' || filterValue === cardCategory) {
+                card.classList.remove('hide');
+            } else {
+                card.classList.add('hide');
+            }
+        });
+    });
+});

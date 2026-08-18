@@ -31,25 +31,43 @@
     </section>
 
     <section id="services" class="services">
-        <h2>Nos Expériences</h2>
-        <div class="cards-container">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=600&q=80" alt="Gorée Sénégal">
+    <h2>Nos Expériences</h2>
+
+    <!-- Boutons de Filtre -->
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="culture">Culture & Circuits</button>
+        <button class="filter-btn" data-filter="gastronomie">Gastronomie</button>
+        <button class="filter-btn" data-filter="hebergement">Hébergement</button>
+    </div>
+
+    <!-- Grille de cartes avec attributs de catégorie -->
+    <div class="cards-container">
+        <div class="card" data-category="culture">
+            <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=600&q=80" alt="Gorée Sénégal" class="card-img">
+            <div class="card-body">
                 <h3>Circuits Sur Mesure</h3>
                 <p>Explorez Gorée, Saint-Louis et la Casamance avec nos guides locaux certifiés.</p>
             </div>
-            <div class="card">
-    <img src="ceebu-jen.jpg" alt="Ceebu Jën traditionnel" class="card-img">
-        <h3>Atelier Ceebu Jën</h3>
-        <p>Apprenez à cuisiner le plat national traditionnel chez l'habitant.</p>
-    </div>
-</div>
-                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Maison d'hôtes">
+        </div>
+
+        <div class="card" data-category="gastronomie">
+            <img src="ceebu-jen.jpg" alt="Ceebu Jën traditionnel" class="card-img">
+            <div class="card-body">
+                <h3>Atelier Ceebu Jën</h3>
+                <p>Apprenez à cuisiner le plat national traditionnel chez l'habitant.</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="hebergement">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Maison d'hôtes" class="card-img">
+            <div class="card-body">
                 <h3>Maison d'Hôtes</h3>
                 <p>Vivez l'hospitalité de la Téranga dans des hébergements authentiques.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="contact" class="contact">
         <h2>Réservez votre expérience</h2>
