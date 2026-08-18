@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Téranga Digitale - Tourisme & Culture au Sénégal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Téranga Digitale</div>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>La Téranga Digitale</h1>
+        <p>Découvrez le Sénégal authentique</p>
+    </header>
+
+    <main>
+        <section class="welcome-card">
+            <h2>Bienvenue au Sénégal</h2>
+            <p>Réservez des expériences immersives uniques : circuits guidés, ateliers cuisine et séjours chez l'habitant.</p>
+        </section>
+
+        <section id="services" class="cards-container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=600&q=80" alt="Circuit Sénégal" class="card-img">
+                <div class="card-body">
+                    <h3>Circuits Sur Mesure</h3>
+                    <p>Explorez Gorée, Saint-Louis et la Casamance avec nos guides locaux certifiés.</p>
+                    <a href="#contact" class="btn">Découvrir</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Cuisine Sénégalaise" class="card-img">
+                <div class="card-body">
+                    <h3>Atelier Ceebu Jën</h3>
+                    <p>Apprenez à cuisiner le plat national traditionnel chez l'habitant.</p>
+                    <a href="#contact" class="btn">Découvrir</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Maison d'Hôtes" class="card-img">
+                <div class="card-body">
+                    <h3>Maison d'Hôtes</h3>
+                    <p>Vivez l'hospitalité de la Téranga dans des hébergements authentiques.</p>
+                    <a href="#contact" class="btn">Découvrir</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION FORMULAIRE AJOUTÉE -->
+        <section id="contact" class="contact-section">
+            <h2>Réservez votre expérience</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Votre Nom complet" required>
+                <input type="email" placeholder="Votre Email" required>
+                <select required>
+                    <option value="">Choisissez une expérience</option>
+                    <option value="circuit">Circuit Sur Mesure</option>
+                    <option value="cuisine">Atelier Ceebu Jën</option>
+                    <option value="hebergement">Maison d'Hôtes</option>
+                </select>
+                <textarea placeholder="Votre message ou vos dates de voyage..." rows="4" required></textarea>
+                <button type="submit" class="btn">Envoyer la demande</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 La Téranga Digitale - Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
