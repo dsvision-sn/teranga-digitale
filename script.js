@@ -70,3 +70,27 @@ filterButtons.forEach(button => {
         });
     });
 });
+// --- Mode Sombre / Mode Clair ---
+const themeToggleBtn = document.getElementById('themeToggle');
+
+// Vérifier si l'utilisateur avait déjà choisi un thème auparavant
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme === 'dark') {
+    document.body.classList.add('dark-theme');
+    themeToggleBtn.textContent = '☀️';
+}
+
+themeToggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+
+    let theme = 'light';
+    if (document.body.classList.contains('dark-theme')) {
+        theme = 'dark';
+        themeToggleBtn.textContent = '☀️';
+    } else {
+        themeToggleBtn.textContent = '🌙';
+    }
+
+    // Sauvegarder le choix dans le navigateur
+    localStorage.setItem('theme', theme);
+});
