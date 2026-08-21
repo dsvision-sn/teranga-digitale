@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Téranga Digitale - Tourisme & Culture au Sénégal</title>
+    <title>Téranga Sénégal - Tourisme & Culture</title>
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Téranga Sénégal - Tourisme & Culture">
+    <meta property="og:description" content="Découvrez le Sénégal authentique : Lac Rose, Île de Gorée, Îles des Madeleines et Îles du Saloum.">
+    <meta property="og:image" content="images (21).jfif">
+    <meta property="og:url" content="https://sowdjibril545-blip.github.io/teranga-senegal/">
+    <meta property="og:type" content="website">
+
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,62 +21,83 @@
 <body>
 
 <header>
-    <div class="logo">La Téranga Digitale 🌴</div>
+    <div class="logo">Téranga Sénégal 🇸🇳</div>
     
     <div class="header-right">
         <nav>
             <ul class="nav-links">
                 <li><a href="#hero">Accueil</a></li>
-                <li><a href="#services">Expériences</a></li>
+                <li><a href="#services">Destinations</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <!-- Bouton Mode Sombre -->
         <button id="themeToggle" class="theme-btn" title="Changer de thème">🌙</button>
     </div>
 </header>
 
 <section id="hero" class="hero">
     <div class="hero-content">
-        <h1>La Téranga Digitale</h1>
-        <p>Découvrez le Sénégal authentique</p>
+        <h1>Téranga Sénégal</h1>
+        <p>Découvrez le Sénégal authentique et ses sites d'exception</p>
     </div>
 </section>
 
 <section id="services" class="services">
-    <h2>Nos Expériences</h2>
+    <h2>Nos Destinations & Expériences</h2>
 
     <!-- Boutons de Filtre -->
     <div class="filter-container">
         <button class="filter-btn active" data-filter="all">Tous</button>
-        <button class="filter-btn" data-filter="culture">Culture & Circuits</button>
-        <button class="filter-btn" data-filter="gastronomie">Gastronomie</button>
-        <button class="filter-btn" data-filter="hebergement">Hébergement</button>
+        <button class="filter-btn" data-filter="lac-rose">Lac Rose</button>
+        <button class="filter-btn" data-filter="goree">Île de Gorée</button>
+        <button class="filter-btn" data-filter="madeleines">Îles des Madeleines</button>
+        <button class="filter-btn" data-filter="saloum">Îles du Saloum</button>
+        <button class="filter-btn" data-filter="cuisine">Atelier Cuisine</button>
     </div>
 
-    
     <div class="cards-container">
-        <div class="card" data-category="culture">
-            <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=600&q=80" alt="Gorée Sénégal" class="card-img">
+        <!-- Lac Rose -->
+        <div class="card" data-category="lac-rose">
+            <img src="Lac Rose.jfif" alt="Promenade au Lac Rose" class="card-img">
             <div class="card-body">
-                <h3>Circuits Sur Mesure</h3>
-                <p>Explorez Gorée, Saint-Louis et la Casamance avec nos guides locaux certifiés.</p>
+                <h3>Lac Rose (Lac Retba)</h3>
+                <p>Traversée en pirogue traditionnelle et balade sur les rives uniques du Lac Rose.</p>
             </div>
         </div>
 
-        <div class="card" data-category="gastronomie">
-            <img src="ceebu-jen.jpg" alt="Ceebu Jën traditionnel" class="card-img">
+        <!-- Île de Gorée -->
+        <div class="card" data-category="goree">
+            <img src="Gorée.jfif" alt="Traversée vers l'Île de Gorée" class="card-img">
             <div class="card-body">
-                <h3>Atelier Ceebu Jën</h3>
-                <p>Apprenez à cuisiner le plat national traditionnel chez l'habitant.</p>
+                <h3>Île de Gorée</h3>
+                <p>Visite historique guidée du patrimoine mondial chargé d'histoire et de culture.</p>
             </div>
         </div>
 
-        <div class="card" data-category="hebergement">
-            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Maison d'hôtes" class="card-img">
+        <!-- Îles des Madeleines -->
+        <div class="card" data-category="madeleines">
+            <img src="Iles des madeleineIles.jfif" alt="Excursion aux Îles des Madeleines" class="card-img">
             <div class="card-body">
-                <h3>Maison d'Hôtes</h3>
-                <p>Vivez l'hospitalité de la Téranga dans des hébergements authentiques.</p>
+                <h3>Îles des Madeleines</h3>
+                <p>Escapade en mer vers le parc national et baignade dans des eaux préservées.</p>
+            </div>
+        </div>
+
+        <!-- Îles du Saloum -->
+        <div class="card" data-category="saloum">
+            <img src="Iles du Saloum.jfif" alt="Delta du Sine Saloum" class="card-img">
+            <div class="card-body">
+                <h3>Îles du Saloum</h3>
+                <p>Balade en pirogue au cœur des bolongs, de la mangrove et repas au fil de l'eau.</p>
+            </div>
+        </div>
+
+        <!-- Atelier Cuisine Thiébou Dieun -->
+        <div class="card" data-category="cuisine">
+            <img src="thieboudienne.jpg" alt="Atelier Cuisine Thiébou Dieun" class="card-img">
+            <div class="card-body">
+                <h3>Atelier Thiébou Dieun</h3>
+                <p>Immersion culinaire : apprenez à cuisiner le véritable riz au poisson sénégalais et dégustez-le ensemble.</p>
             </div>
         </div>
     </div>
@@ -77,7 +106,6 @@
 <section id="contact" class="contact">
     <h2>Contact & Réservation</h2>
 
-    <!-- Coordonnées directes -->
     <div class="contact-info">
         <div class="info-item">
             <span>📞</span>
@@ -93,26 +121,25 @@
         </div>
     </div>
 
-    <!-- Formulaire de réservation avec le calculateur -->
+    <!-- Formulaire de réservation -->
     <form class="contact-form" id="bookingForm">
         <input type="text" placeholder="Votre Nom complet" required>
         <input type="email" placeholder="Votre Email" required>
         
-        <!-- Choix de l'expérience -->
         <select id="experienceSelect" required>
-            <option value="">Choisissez une expérience</option>
-            <option value="circuit">Circuit Sur Mesure (25 000 FCFA / pers)</option>
-            <option value="cuisine">Atelier Ceebu Jën (15 000 FCFA / pers)</option>
-            <option value="hebergement">Maison d'Hôtes (20 000 FCFA / nuit)</option>
+            <option value="">Choisissez une destination ou une activité</option>
+            <option value="lac-rose">Excursion Lac Rose (20 000 FCFA / pers)</option>
+            <option value="goree">Visite Île de Gorée (15 000 FCFA / pers)</option>
+            <option value="madeleines">Îles des Madeleines (20 000 FCFA / pers)</option>
+            <option value="saloum">Circuit Îles du Saloum (35 000 FCFA / pers)</option>
+            <option value="cuisine">Atelier Cuisine Thiébou Dieun (25 000 FCFA / pers)</option>
         </select>
 
-        <!-- Nombre de personnes -->
         <div style="text-align: left;">
             <label for="personCount" style="font-weight: 600; font-size: 0.9rem;">Nombre de participants :</label>
             <input type="number" id="personCount" min="1" max="20" value="1" required style="width: 100%; margin-top: 5px;">
         </div>
 
-        <!-- Affichage du Prix Total -->
         <div id="priceDisplay" style="background-color: #e8f5e9; color: #2e7d32; padding: 12px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; text-align: center; border: 1px solid #c8e6c9; margin-bottom: 1rem;">
             Prix estimé : <span id="totalPrice">0 FCFA</span>
         </div>
@@ -122,11 +149,10 @@
     </form>
 </section>
 
-<!-- Pop-up Notification (Toast) -->
 <div id="toast" class="toast">Réservation envoyée avec succès ! 🌴</div>
 
 <footer>
-    <p>&copy; 2026 La Téranga Digitale - Tous droits réservés.</p>
+    <p>&copy; 2026 Téranga Sénégal - Tous droits réservés.</p>
 </footer>
 
 <script src="script.js"></script>
